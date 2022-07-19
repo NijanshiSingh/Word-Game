@@ -14,7 +14,7 @@ int Life =5;
 char ch = ' ';
 vector<int> k;
 char guess[10] = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
-char choice[5] = {' ', ' ',' '};
+char choice[5] = {' ', ' ',' ',' ',' '};
 
 void gameLogic(string mini, char choice)
 {
@@ -94,9 +94,9 @@ void gamewindow(string mini)
                     else if(i==16)
                     	cout<<choice[2];
                     else if(i==17)
-                    	cout<<choice[3]<<" ";
+                    	cout<<choice[3];
                     else if(i==18)
-                    	cout<<choice[4]<<" ";	
+                    	cout<<choice[4];	
                 }
                 else
                 cout<<" ";
