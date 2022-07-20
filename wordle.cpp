@@ -14,7 +14,7 @@ int Life =5;
 char ch = ' ';
 vector<int> k;
 char guess[10] = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
-char choice[5] = {' ', ' ',' ',' ',' '};
+char choice[10] = {' ',' ',' ',' ',' ',' ',' ',' ',' '};
 
 void gameLogic(string mini, char choice)
 {
@@ -85,18 +85,9 @@ void gamewindow(string mini)
                     cout<<"Enter a character and guess the word!";
                     j = 38;
                 }
-                else if(Life<=5 && j==2 && (i>=14 && i<=18))
+                else if(Life<=5 && j==2 && (i>=14 && i<=23))
                 {
-                	if(i==14)
-                    	cout<<choice[0];
-                    else if(i==15)
-                    	cout<<choice[1];
-                    else if(i==16)
-                    	cout<<choice[2];
-                    else if(i==17)
-                    	cout<<choice[3];
-                    else if(i==18)
-                    	cout<<choice[4];	
+                    cout<<choice[i-14];	
                 }
                 else
                 cout<<" ";
